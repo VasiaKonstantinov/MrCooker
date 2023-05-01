@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="32dp"
+    android:paddingHorizontal="16dp">
+
+    <TextView
+        android:id="@+id/tvAddToRedList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_add_product_to_red_list"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddToRedList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_button_16"
+        android:text="@string/text_yes"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddToRedList"
+        app:layout_constraintEnd_toStartOf="@+id/btnDontAddToRedList"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDontAddToRedList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_button_16"
+        android:paddingHorizontal="5dp"
+        android:text="@string/text_no"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddToRedList"
+        app:layout_constraintStart_toEndOf="@+id/btnAddToRedList"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

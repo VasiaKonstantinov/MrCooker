@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/bookListFragment">
+    <fragment
+        android:id="@+id/chooseProductsFragment"
+        android:name="com.example.mrcooker.presentation.fragments.chooseProductsListFragment.ChooseProductsFragment"
+        android:label="ChooseProductsFragment" >
+        <action
+            android:id="@+id/action_chooseProductsFragment_to_chooseDishFragment"
+            app:destination="@id/chooseDishFragment" />
+        <action
+            android:id="@+id/action_chooseProductsFragment_to_redProductsFragment"
+            app:destination="@id/redProductsFragment" />
+        <action
+            android:id="@+id/action_chooseProductsFragment_to_createDishFragment"
+            app:destination="@id/createDishFragment" />
+        <action
+            android:id="@+id/action_chooseProductsFragment_to_viewAllDishFragment"
+            app:destination="@id/viewAllDishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseDishFragment"
+        android:name="com.example.mrcooker.presentation.fragments.chooseDishFragment.ChooseDishFragment"
+        android:label="ChooseDishFragment" >
+        <argument
+            android:name="productDataList"
+            app:argType="com.example.mrcooker.data.utils.dataClasses.ProductData[]" />
+        <action
+            android:id="@+id/action_chooseDishFragment_to_cookingViewPagerFragment"
+            app:destination="@id/cookingViewPagerFragment" />
+        <action
+            android:id="@+id/action_chooseDishFragment_to_viewAllDishFragment"
+            app:destination="@id/viewAllDishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cookingViewPagerFragment"
+        android:name="com.example.mrcooker.presentation.fragments.cookingViewPagerFragment.CookingViewPagerFragment"
+        android:label="CookingViewPagerFragment" >
+        <argument
+            android:name="recipeStepAndIngredientsList"
+            app:argType="com.example.mrcooker.data.utils.dataClasses.RecipeStepAndIngredientsList" />
+        <action
+            android:id="@+id/action_cookingViewPagerFragment_to_chooseProductsFragment"
+            app:destination="@id/chooseProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/redProductsFragment"
+        android:name="com.example.mrcooker.presentation.fragments.redProductListFragment.RedProductsFragment"
+        android:label="RedProductsFragment">
+        <deepLink
+            android:id="@+id/deepLink"
+            android:autoVerify="true"
+            app:uri="com.example.mrcooker.presentation.fragments.redProductListFragment.RedProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createDishFragment"
+        android:name="com.example.mrcooker.presentation.fragments.createDishFragment.CreateDishFragment"
+        android:label="CreateDishFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.mrcooker.presentation.fragments.loginFragment.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_chooseProductsFragment"
+            app:destination="@id/chooseProductsFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewAllDishFragment"
+        android:name="com.example.mrcooker.presentation.fragments.viewAllDish.ViewAllDishFragment"
+        android:label="ViewAllDishFragment" >
+        <action
+            android:id="@+id/action_viewAllDishFragment_to_cookingViewPagerFragment"
+            app:destination="@id/cookingViewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.mrcooker.presentation.fragments.regestrationFragment.RegistrationFragment"
+        android:label="RegistrationFragment" >
+        <action
+            android:id="@+id/action_registrationFragment_to_chooseProductsFragment"
+            app:destination="@id/chooseProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookListFragment"
+        android:name="com.example.mrcooker.presentation.fragments.bookListFragment.BookListFragment"
+        android:label="BookListFragment" />
+</navigation>

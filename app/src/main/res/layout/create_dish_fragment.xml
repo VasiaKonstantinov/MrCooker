@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPlease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="start"
+        android:letterSpacing="0.04"
+        android:text="@string/text_please_create_dish"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etDishName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/background_edit_text"
+        android:hint="@string/set_dish_name"
+        android:maxLines="1"
+        android:paddingVertical="10dp"
+        android:paddingStart="9dp"
+        android:paddingEnd="32dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/light_grey"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPlease"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_goneMarginEnd="36dp" />
+
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etProducts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/background_edit_text"
+        android:focusable="false"
+        android:hint="@string/tab_to_select_product"
+        android:maxLines="1"
+        android:paddingVertical="10dp"
+        android:paddingStart="9dp"
+        android:paddingEnd="32dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/light_grey"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etDishName"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_goneMarginEnd="36dp" />
+
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etSteps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/background_edit_text"
+        android:hint="@string/plese_write_step_discription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:maxLines="1"
+        android:paddingVertical="10dp"
+        android:paddingStart="9dp"
+        android:paddingEnd="64dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/light_grey"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/etProducts"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_goneMarginEnd="36dp" />
+
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etStepsTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/background_edit_text"
+        android:hint="@string/tab_to_set_time"
+        android:maxLines="1"
+        android:inputType="number"
+        android:paddingVertical="10dp"
+        android:paddingStart="9dp"
+        android:paddingEnd="64dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/light_grey"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_goneMarginEnd="36dp"
+        app:layout_constraintTop_toBottomOf="@id/etSteps"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCreateDish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button_16"
+        android:paddingHorizontal="5dp"
+        android:textColor="@color/white"
+        android:text="@string/text_create_dish_without_plus"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameProducts"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/popup"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/etProducts"
+        app:layout_constraintStart_toStartOf="@+id/etProducts"
+        app:layout_constraintTop_toBottomOf="@+id/etProducts">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCreateStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/rounded_button_16"
+        android:paddingHorizontal="5dp"
+        android:text="@string/create_step"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/etSteps"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

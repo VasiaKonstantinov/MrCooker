@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Mr.Cooker</string>
+    <string name="text_choose_products">Choose products</string>
+    <string name="text_show_red_product_list">Show red products list</string>
+    <string name="text_time">Time</string>
+    <string name="text_next_step">Next step</string>
+    <string name="text_set_rate">Set rate</string>
+    <string name="text_start_timer">Start timer</string>
+    <string name="text_add_product_to_red_list">Add product to red list</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="text_example_dish">Example Dish</string>
+    <string name="text_example_product">Example product</string>
+
+
+    //ovenBakedPotatoFries_Ing
+    <string name="text_ovenBakedPotatoFries_first_ing">2 pounds baking potatoes, each cut into six wedges</string>
+    <string name="text_ovenBakedPotatoFries_second_ing">2 tablespoons olive oil</string>
+    <string name="text_ovenBakedPotatoFries_third_ing">½ teaspoon dried thyme leaves</string>
+    <string name="text_ovenBakedPotatoFries_fourth_ing">¼ teaspoon ground black pepper</string>
+    <string name="text_ovenBakedPotatoFries_fifth_ing">salt to taste</string>
+    <string name="text_ovenBakedPotatoFries_sixth_ing">¼ cup shredded Cheddar cheese (Optional)</string>
+
+    //ovenBakedPotatoFries_Steps
+    <string name="text_ovenBakedPotatoFries_first_step">Preheat the oven to 450 degrees F (230 degrees C).</string>
+    <string name="text_ovenBakedPotatoFries_second_step">Arrange potato wedges on a baking sheet; drizzle with olive oil and season with thyme, pepper, and salt. Toss wedges with a spatula to coat evenly.</string>
+    <string name="text_ovenBakedPotatoFries_third_step">Roast potato wedges in the preheated oven for 15 minutes; flip and continue roasting until soft in the center, about 15 minutes more. Transfer wedges to a platter and sprinkle with cheese.</string>
+
+    //SPAGHETTI_AGLIO_E_OLIO
+    <string name="text_SPAGHETTI_AGLIO_E_OLIO_first_step">Bring a large pot of lightly salted water to a boil. Cook spaghetti in the boiling water, stirring occasionally until cooked through but firm to the bite, about 10 to 12 minutes. Drain and transfer to a pasta bowl.</string>
+    <string name="text_SPAGHETTI_AGLIO_E_OLIO_second_step">While the pasta is cooking, combine olive oil and garlic in a cold skillet. Cook over medium heat to slowly toast garlic, about 10 minutes. Reduce heat to medium-low when olive oil begins to bubble. Cook and stir until garlic is golden brown, about another 5 minutes. Remove from heat.</string>
+    <string name="text_SPAGHETTI_AGLIO_E_OLIO_third_step">Stir red pepper flakes, salt, and black pepper into pasta. Pour in hot olive oil and garlic, and sprinkle on Italian parsley and half of the Parmigiano-Reggiano cheese; toss until combined.</string>
+    <string name="text_SPAGHETTI_AGLIO_E_OLIO_four_step">Serve pasta topped with the remaining Parmigiano-Reggiano cheese.</string>
+
+    //QUICK_AND_EASY_CHICKEN_MOODLE_SOUP
+    <string name="text_QUICK_AND_EASY_CHICKEN_MOODLE_SOUP_first_step">Melt butter in a large pot over medium heat. Add onion and celery and cook until just tender, about 5 minutes.</string>
+    <string name="text_QUICK_AND_EASY_CHICKEN_MOODLE_SOUP_second_step">Add chicken broth, vegetable broth, chicken, egg noodles, carrots, basil, oregano, salt, and pepper. Stir to combine and bring to a boil.</string>
+    <string name="text_QUICK_AND_EASY_CHICKEN_MOODLE_SOUP_third_step">Reduce heat and simmer for 20 minutes.</string>
+
+    //MEAT_PEE
+    <string name="text_MEAT_PIE_first_step">Preheat the oven to 425 degrees F (220 degrees C).</string>
+    <string name="text_MEAT_PIE_second_step">Place potato in a saucepan with enough water to cover. Bring to a boil, and cook until tender, about 5 minutes. Drain, mash, and set aside.</string>
+    <string name="text_MEAT_PIE_third_step">Meanwhile, crumble ground beef and pork into a large saucepan. Add onion, garlic, mustard powder, thyme, sage, cloves, salt, and black pepper. Stir in water. Cook over medium heat, stirring, until meat is evenly browned.</string>
+    <string name="text_MEAT_PIE_four_step">Remove from the heat and mix in mashed potato.</string>
+    <string name="text_MEAT_PIE_five_step">Ease one pie crust into a 9-inch pie plate. Fill with meat mixture, then top with the remaining pie crust. Trim any excess dough, then crimp the edges with the tines of a fork to seal. Prick top crust a few times with a knife to vent steam. Cover the edges of the crust with aluminum foil.</string>
+    <string name="text_MEAT_PIE_sex_step">Bake in the preheated oven until crust is browned, about 25 minutes.</string>
+
+    //text_view
+    <string name="preference_file_key">preference_file_key</string>
+    <string name="text_please">Please</string>
+    <string name="text_please_create_step">Please create step</string>
+    <string name="text_please_create_dish">Please create dish</string>
+    <string name="text_please_add_book">Please add book</string>
+    <string name="tab_to_select_product">Tab to select product</string>
+    <string name="set_dish_name">Set dish name</string>d
+    <string name="book_name">Book name</string>d
+    <string name="text_create_dish">+ Create dish</string>
+    <string name="text_add_book">+ Add book</string>
+    <string name="text_sort_library">Sort library</string>
+    <string name="text_create_dish_without_plus">Create dish</string>
+    <string name="plese_write_step_discription">Plese, write step discription</string>
+    <string name="plese_write_date_of_manufacture">Plese, write date of manufacture</string>
+    <string name="plese_write_author">Plese, write author</string>
+    <string name="create_step">Create step</string>
+    <string name="tab_to_set_time">Tab to set time</string>
+    <string name="user_name_hint">Enter user name</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="choose_products_that_you_have">Choose products that you have</string>
+</resources>
