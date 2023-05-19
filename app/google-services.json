@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "816548914274",
+    "project_id": "mrcooker-e8bb6",
+    "storage_bucket": "mrcooker-e8bb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816548914274:android:eddc749849b56c7b019d3b",
+        "android_client_info": {
+          "package_name": "com.example.mrcooker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816548914274-1dc3pasatg3tqjr87bn9ucdvkeamups1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDaqiophSbISuOa6OQRQlzPUwm4oZNgYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816548914274-1dc3pasatg3tqjr87bn9ucdvkeamups1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

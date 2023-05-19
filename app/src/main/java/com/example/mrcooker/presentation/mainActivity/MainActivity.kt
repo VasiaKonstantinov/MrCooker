@@ -11,10 +11,13 @@ import androidx.core.net.toUri
 import androidx.core.view.GravityCompat
 import androidx.navigation.NavDeepLinkRequest
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.mrcooker.R
 import com.example.mrcooker.data.utils.viewBinding
 import com.example.mrcooker.databinding.ActivityMainBinding
+import com.example.mrcooker.presentation.fragments.loginFragment.LoginFragment
 import com.example.mrcooker.presentation.fragments.redProductListFragment.RedProductsFragment
+import com.example.mrcooker.presentation.fragments.regestrationFragment.RegistrationFragmentDirections
 import com.google.android.material.navigation.NavigationView
 import dagger.hilt.android.AndroidEntryPoint
 import java.lang.System.exit
@@ -28,15 +31,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-//        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_launcher_background)
-//        binding.navigationView.itemIconTintList
-//        binding.navigationView.setNavigationItemSelectedListener(this)
+       // supportActionBar?.setDisplayHomeAsUpEnabled(true)
+       // supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_launcher_background)
+        binding.navigationView.itemIconTintList
+        binding.navigationView.setNavigationItemSelectedListener(this)
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         val id = item.itemId
-        Log.d("fdfdg", item.toString())
         var result = false
         when (id) {
             R.id.redList -> {
@@ -50,6 +52,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.createDish -> {
                 result = true
                 startCreateDishList()
+            }
+            R.id.logout -> {
+                result = true
+                startLoginFragment()
             }
         }
         return result
@@ -77,6 +83,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         findNavController(R.id.nav_host_fragment).navigate(R.id.loginFragment)
         supportFragmentManager.beginTransaction().add(R.id.nav_host_fragment, RedProductsFragment())
             .commit()
+    }
+
+    private fun startLoginFragment() {
+        val navController = findNavController(R.id.nav_host_fragment)
+        navController.navigate(R.id.loginFragment)
     }
 
     private fun startDishFragment() {

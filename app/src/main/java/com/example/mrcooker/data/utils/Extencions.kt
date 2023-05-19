@@ -39,7 +39,6 @@ fun String.parseStringFromDatabase(): List<String> {
         parsedString = parsedString.replace("$parsedElement$barer", "")
         parsedStingList.add(parsedElement.trim())
         if (parsedString.isEmpty()) cycleIsNeed = false
-        Log.d("ewrwerewfgdfg", this.toString())
     }
     return parsedStingList
 }
