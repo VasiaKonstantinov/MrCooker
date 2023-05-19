@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/bookListFragment">
+    app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/chooseProductsFragment"
         android:name="com.example.mrcooker.presentation.fragments.chooseProductsListFragment.ChooseProductsFragment"

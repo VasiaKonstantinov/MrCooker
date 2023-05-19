@@ -63,7 +63,8 @@
     <string name="plese_write_author">Plese, write author</string>
     <string name="create_step">Create step</string>
     <string name="tab_to_set_time">Tab to set time</string>
-    <string name="user_name_hint">Enter user name</string>
+    <string name="enter_your_email">Enter your email</string>
     <string name="password_hint">Enter your password</string>
     <string name="choose_products_that_you_have">Choose products that you have</string>
+    <string name="text_logout">Logout</string>
 </resources>

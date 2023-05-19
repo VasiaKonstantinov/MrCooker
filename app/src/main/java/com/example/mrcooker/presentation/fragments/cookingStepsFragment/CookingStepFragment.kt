@@ -3,6 +3,7 @@ package com.example.mrcooker.presentation.fragments.cookingStepsFragment
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,7 +28,7 @@ import kotlinx.coroutines.*
 class CookingStepFragment : Fragment() {
 
     private lateinit var binding: CookingStepFragmentBinding
-    private val viewModel by viewModels<ChooseDishFragmentViewModel>()
+    private val viewModel by viewModels<CookingStepsFragmentsViewModel>()
     private var recipeStepAndIngredientsList: RecipeStepAndIngredientsList? = null
     private var cookingStep: CookingStep? = null
     private var coroutineScope = CoroutineScope(Dispatchers.IO)
@@ -100,11 +101,11 @@ class CookingStepFragment : Fragment() {
         if (timerJob == null) {
             timerJob = coroutineScope.launch {
                 for (i in cookingStepTime downTo 0) {
-                    delay(1000)
                     this.launch(Dispatchers.Main) {
                         timerTime = i
-                        binding.etTimer.text = i.toString().toEditable()
+                        binding.etTimer.text = viewModel.mapTime(timerTime.toString()).toEditable()
                     }
+                    delay(1000)
                 }
             }
         }
